@@ -1,0 +1,20 @@
+name: Example Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: 22f3002388@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+
+      - name: Another Step
+        run: echo "This is another step."
